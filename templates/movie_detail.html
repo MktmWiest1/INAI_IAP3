@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+</head>
+<body>
+<style>
+
+    body {
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #b21954 0%, #dad48a 46%, #7126dc 100%);
+    }
+
+</style>
+<div>
+    <h2><a href="/movie/{{ movie_id.id }}"> {{ movie_id.title }}</a></h2>
+    <p>{{ movie_id.description }}</p>
+    <img src="{{ movie_id.image.url }}" alt="">
+    <p>{{ movie_id.quantity }}</p>
+    <p> {{ movie_id.genger }}</p>
+    <p>{{ movie_id.date_filmed }}</p>
+
+</div>
+</body>
+</html>
+
